@@ -7,12 +7,12 @@ Rails.application.routes.draw do
     get 'welcome/index'
   end
 
-  namespace :profiles_backoffice do
+  namespace :users_backoffice do
     get 'welcome/index'
   end
 
   root 'site/welcome#index'
 
   devise_for :admins
-  devise_for :profiles
+  devise_for :users
 end
